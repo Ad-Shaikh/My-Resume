@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.4;
@@ -18,33 +19,33 @@
             background: #f5f5f5;
             font-size: 13px;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 10px auto;
             background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             padding: 20px 40px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 4em;
             margin-bottom: 3px;
             font-weight: 600;
         }
-        
+
         .header h2 {
             font-size: 1.5em;
             font-weight: 300;
             margin-bottom: 12px;
         }
-        
+
         .contact-info {
             display: flex;
             justify-content: center;
@@ -52,33 +53,33 @@
             flex-wrap: wrap;
             font-size: 1em;
         }
-        
+
         .contact-info span {
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        
+
         .two-column {
             display: grid;
             grid-template-columns: 380px 1fr;
             gap: 0;
         }
-        
+
         .left-column {
             background: #f8f9fa;
             padding: 20px;
             border-right: 3px solid #1e3c72;
         }
-        
+
         .right-column {
             padding: 20px 30px;
         }
-        
+
         .section {
             margin-bottom: 18px;
         }
-        
+
         .section-title {
             color: #1e3c72;
             font-size: 1.3em;
@@ -87,22 +88,22 @@
             padding-bottom: 5px;
             border-bottom: 2px solid #1e3c72;
         }
-        
+
         .left-column .section-title {
             font-size: 1.15em;
         }
-        
+
         .profile-summary {
             text-align: justify;
             color: #555;
         }
-        
+
         .skills-list {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
         }
-        
+
         .skills-list li {
             background: white;
             padding: 4px 10px;
@@ -112,54 +113,64 @@
             border: 1px solid #ddd;
             display: inline-block;
         }
-        
-        .experience-item, .project-item, .education-item {
+
+        .experience-item,
+        .project-item,
+        .education-item {
             margin-bottom: 15px;
         }
-        
-        .job-header, .project-header, .edu-header {
+
+        .job-header,
+        .project-header,
+        .edu-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 6px;
         }
-        
-        .job-title, .project-title, .degree {
+
+        .job-title,
+        .project-title,
+        .degree {
             font-weight: 600;
             color: #1e3c72;
             font-size: 1em;
         }
-        
-        .company, .location {
+
+        .company,
+        .location {
             color: #666;
             font-style: italic;
         }
-        
+
         .date {
             color: #888;
             font-size: 0.85em;
             white-space: nowrap;
         }
-        
-        .responsibilities, .project-details {
+
+        .responsibilities,
+        .project-details {
             list-style: none;
             padding-left: 0;
         }
-        
-        .responsibilities li, .project-details li {
+
+        .responsibilities li,
+        .project-details li {
             padding: 3px 0 3px 18px;
             position: relative;
             color: #555;
         }
-        
-        .responsibilities li:before, .project-details li:before {
+
+        .responsibilities li:before,
+        .project-details li:before {
             content: "▹";
             position: absolute;
             left: 0;
             color: #1e3c72;
             font-weight: bold;
         }
-        
+
         .tech-stack {
             margin-top: 6px;
             padding: 6px;
@@ -167,61 +178,70 @@
             border-radius: 4px;
             font-size: 0.9em;
         }
-        
+
         .tech-stack strong {
             color: #1e3c72;
         }
-        
+
         .certifications-list {
             list-style: none;
         }
-        
+
         .certifications-list li {
             padding: 4px 0;
             color: #555;
             font-size: 0.9em;
         }
-        
+
         .link {
             color: white;
             text-decoration: none;
         }
-        
+
         .link:hover {
             text-decoration: underline;
         }
-        
+
         @media print {
             body {
                 background: white;
                 font-size: 11px;
             }
+
             .container {
                 box-shadow: none;
                 margin: 0;
                 max-width: 100%;
             }
+
             .header {
                 padding: 15px 30px;
             }
+
             .left-column {
                 padding: 15px;
             }
+
             .right-column {
                 padding: 15px 25px;
             }
+
             .section {
                 margin-bottom: 12px;
             }
-            .experience-item, .project-item, .education-item {
+
+            .experience-item,
+            .project-item,
+            .education-item {
                 margin-bottom: 10px;
             }
         }
-        
+
         @media (max-width: 900px) {
             .two-column {
                 grid-template-columns: 1fr;
             }
+
             .left-column {
                 border-right: none;
                 border-bottom: 3px solid #1e3c72;
@@ -229,11 +249,12 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Adnan Shaikh</h1>
-            <h2>Quantitative / Software Engineer Intern (Quant Research • Quant Dev)</h2>
+            <h2>Software Engineer | Python | Backend & Distributed Systems | 3+ Years Experience</h2>
             <div class="contact-info">
                 <span>Dublin, Ireland</span>
                 <span>|</span>
@@ -246,71 +267,65 @@
                 <span><a href="https://www.linkedin.com/in/ad-shaikh/" class="link">LinkedIn</a></span>
             </div>
         </div>
-        
+
         <div class="two-column">
             <div class="left-column">
                 <div class="section">
                     <h3 class="section-title">Profile Summary</h3>
                     <p class="profile-summary" style="text-align: justify; color: #555; font-size: 0.9em;">
-                        Software Engineer with 3+ years of experience building and operating large-scale, reliable backend systems in regulated financial environments. Led cross-functional teams delivering high-availability services processing 600K+ daily transactions with 99.9% uptime. Strong foundation in computer science fundamentals, distributed systems, and data-driven development. Currently pursuing MSc Computer Science at University College Dublin (Graduating Aug 2026).
+                        Software Engineer with 3+ years of experience designing, developing, and maintaining scalable
+                        software systems. Strong foundation in programming principles, data structures, and system
+                        design, with hands-on experience across the full software development lifecycle **from
+                        requirements analysis to deployment and production support**. Proven ability to deliver
+                        reliable, high-quality solutions through clean code, debugging, testing, and cross-functional
+                        collaboration.
+
                     </p>
                     <span style="display: block; height: 0.4em;"></span>
                     <p class="profile-summary" style="text-align: justify; color: #555; font-size: 0.9em;">
-                        Seeking a Software Engineering role focused on building scalable, user-centric infrastructure.
-                    </p>
-                    <span style="display: block; height: 0.4em;"></span>
-                    <p class="profile-summary" style="text-align: justify; color: #555; font-size: 0.9em;">
-                        Available for full-time opportunities across Ireland from May 2026 (Remote | Hybrid | On-site)
+                        Experienced in Agile development, system design, event-driven architectures, monitoring and
+                        observability, and infrastructure automation. Collaborative team player with hands-on experience
+                        in code reviews, troubleshooting, and continuous improvement of production systems.
                     </p>
                 </div>
-                
+
                 <div class="section">
                     <h3 class="section-title">Key Skills</h3>
                     <ul class="skills-list">
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>C</li>
-                        <li>C#</li>
-
                         <li>Data Structures & Algorithms</li>
-                        <li>Object-Oriented Programming</li>
-                        <li>Distributed Systems</li>
-                        <li>System Design</li>
-
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Software Design & System Design</li>
+                        <li>Debugging & Performance Optimization</li>
+                        <li>Software Development Lifecycle (SDLC)</li>
+                        <li>Python</li>
+                        <li>SQL</li>
                         <li>REST APIs</li>
-                        <li>HTTP & Web Services</li>
                         <li>Flask</li>
                         <li>FastAPI</li>
-
+                        <li>Microservices Architecture</li>
+                        <li>AWS (S3, EC2, Lambda)</li>
                         <li>Docker</li>
                         <li>Kubernetes</li>
-                        <li>CI/CD</li>
-                        <li>Monitoring & Observability</li>
-
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>Redis</li>
-                        <li>MS SQL Server</li>
-
-                        <li>AWS (EC2, S3, Lambda, EKS)</li>
-                        <li>GCP (GKE, VM)</li>
-
+                        <li>CI/CD Pipelines</li>
                         <li>Git</li>
-                        <li>Code Reviews</li>
-                        <li>Agile Development</li>
-                    </ul>
+                        <li>Machine Learning</li>
+                        <li>Model Deployment</li>
+                        <li>TensorFlow / PyTorch</li>
+                        <li>OpenCV</li>
+                        <li>MLOps</li>
 
+                    </ul>
                 </div>
-                
+
                 <div class="section">
                     <h3 class="section-title">Education</h3>
                     <div class="education-item">
                         <div class="degree">MSc. Computer Science</div>
                         <div class="company">University College Dublin (UCD)</div>
                         <div class="location">Dublin, Ireland</div>
-                        <div class="date">Sep 2025 - Sep 2026</div>
+                        <div class="date">Expected Sep 2026</div>
                     </div>
-                    
+
                     <div class="education-item">
                         <div class="degree">B.E. Computer Engineering</div>
                         <div class="company">Rizvi College of Engineering</div>
@@ -318,11 +333,12 @@
                         <div class="date">June 2018 - May 2022</div>
                     </div>
                 </div>
-                
+
                 <div class="section">
                     <h3 class="section-title">Academic Projects</h3>
                     <div class="project-item">
-                        <div class="project-title" style="font-size: 1em; margin-bottom: 8px;">Driver Drowsiness Detection</div>
+                        <div class="project-title" style="font-size: 1em; margin-bottom: 8px;">Driver Drowsiness
+                            Detection</div>
                         <ul class="project-details" style="font-size: 0.9em;">
                             <li>Real-time facial landmark detection using OpenCV and Haarcascade Classifier</li>
                             <li>Published research paper in JETIR (April 2022)</li>
@@ -330,12 +346,14 @@
                             <li>Tech Stack: Python, OpenCV, TensorFlow, CNN</li>
                         </ul>
                         <p style="margin-top: 8px; font-size: 0.85em; color: #666;">
-                            <strong>GitHub:</strong> <a href="https://github.com/Ad-Shaikh/driver-drowsiness-detection" style="color: #1e3c72; word-break: break-all;">github.com/Ad-Shaikh/driver-drowsiness-detection</a><br>
-                            <strong>Paper:</strong> <a href="https://www.jetir.org/view?paper=JETIR2204513" style="color: #1e3c72;">jetir.org/view?paper=JETIR2204513</a>
+                            <strong>GitHub:</strong> <a href="https://github.com/Ad-Shaikh/driver-drowsiness-detection"
+                                style="color: #1e3c72; word-break: break-all;">github.com/Ad-Shaikh/driver-drowsiness-detection</a><br>
+                            <strong>Paper:</strong> <a href="https://www.jetir.org/view?paper=JETIR2204513"
+                                style="color: #1e3c72;">jetir.org/view?paper=JETIR2204513</a>
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="section">
                     <h3 class="section-title">Certifications</h3>
                     <ul class="certifications-list">
@@ -346,7 +364,7 @@
                         <li>PGDM Cloud Computing (IITH)</li>
                     </ul>
                 </div>
-                
+
                 <div class="section">
                     <h3 class="section-title">Volunteering & Extra Curricular</h3>
                     <ul class="certifications-list">
@@ -357,7 +375,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="right-column">
                 <div class="section">
                     <h3 class="section-title">Experience</h3>
@@ -367,21 +385,42 @@
                                 <div class="job-title">Software Developer</div>
                                 <div class="company">X-Biz Techventures Pvt. Ltd. - Mumbai, India</div>
                             </div>
-                            <div class="date">Nov 2022 - Current</div>
+                            <div class="date">Nov 2022 - Present</div>
                         </div>
-                        <p style="font-style: italic; color: #666; margin-bottom: 10px;">(Promoted from Junior Software Developer → Software Developer, led enterprise-scale backend and AI initiatives for ICICI Bank and other BFSI clients.)</p>
+
+                        <p style="font-style: italic; color: #666; margin-bottom: 10px;">
+                            Promoted from Junior Software Developer; contributed to enterprise-scale backend systems for
+                            BFSI clients including ICICI Bank.
+                        </p>
+
                         <ul class="responsibilities">
-                            <li>Owned end-to-end delivery of backend services processing 600K+ daily financial transactions with 99.9% uptime</li>
-                            <li>Designed, implemented, and maintained scalable REST APIs, ensuring safe production deployments under strict SLAs</li>
-                            <li>Led a 7-engineer team, conducting code reviews and coordinating cross-functional delivery</li>
-                            <li>Migrated legacy systems to cloud-native infrastructure, reducing downtime by 70%</li>
-                            <li>Improved system throughput by 3x through performance tuning and observability-driven optimization</li>
-                            <li>Integrated Autoscaling using Prometheus and RabbitMQ increasing the throughput by 90% and making the system 100% stable.</li>
-                            <li>Mentored 10+ developers, reviewed code, and managed deployments through Docker, Nginx, and GitHub Actions.</li>
-                            <li>Delivered multiple POCs and internal automation tools focused on AI integration and process optimization increasing the revenue by 60%.</li>
+                            <li>Designed, implemented, and maintained scalable backend software systems for
+                                mission-critical BFSI business processes.</li>
+
+                            <li>Translated functional requirements into robust, maintainable technical solutions
+                                across the full software development lifecycle.</li>
+
+                            <li>Developed clean, efficient, and reusable Python code following coding standards
+                                and best practices.</li>
+
+                            <li>Debugged, tested, and resolved production issues to ensure system stability,
+                                performance, and high availability.</li>
+
+                            <li>Participated in technical design discussions, solution reviews, and code reviews.</li>
+
+                            <li>Built and integrated AI/ML-powered components for OCR, document processing, and
+                                data extraction into production systems.</li>
+
+                            <li>Deployed backend services and ML-enabled APIs using Flask, FastAPI, Docker, and
+                                CI/CD pipelines.</li>
+
+                            <li>Monitored and optimized systems processing 600K+ daily transactions with
+                                99.9% availability under strict SLAs.</li>
                         </ul>
+
                     </div>
-                    
+
+
                     <div class="experience-item">
                         <div class="job-header">
                             <div>
@@ -391,68 +430,88 @@
                             <div class="date">Dec 2021 - May 2022</div>
                         </div>
                         <ul class="responsibilities">
-                            <li>Created Web Applications using Flask and integrated SQLite Database for Clinic Management System and E-Commerce Web application for clients.</li>
-                            <li>Integrated multiple modules such as Cart functionality, multi-table functionality, and other CRUD applications.</li>
-                            <li>Researched & installed the application on premises of the Client and provided free Heroku app version, lowering the cost by 100%.</li>
+                            <li>Owned end-to-end development lifecycle including design, development, deployment, and
+                                client support.</li>
+                            <li>Created Web Applications using Flask and integrated SQLite Database for Clinic
+                                Management System and E-Commerce Web application for clients.</li>
+                            <li>Integrated multiple modules such as Cart functionality, multi-table functionality, and
+                                other CRUD applications.</li>
+                            <li>Researched & installed the application on premises of the Client and provided free
+                                Heroku app version, lowering the cost by 100%.</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="section">
                     <h3 class="section-title">Key Projects</h3>
-                    
+
+
+
                     <div class="project-item">
                         <div class="project-title">ISV Outward Project (ICICI Bank - Cheque & DD Clearing)</div>
                         <ul class="project-details">
-                            <li>Automated processing of 600,000+ daily transactions, reducing manual effort by 85% while maintaining 99.9% uptime for critical banking operations.</li>
-                            <li>Delivered 3x faster processing speeds and consistently met strict 5-hour SLA requirements.</li>
-                            <li>Reduced infrastructure costs by 20% through optimized deployments and resource management.</li>
+                            <li>Designed and maintained software systems automating 600,000+ daily transactions...
+                                reducing manual effort by 85% while
+                                maintaining 99.9% uptime for critical banking operations.</li>
+                            <li>Delivered 3x faster processing speeds and consistently met strict 5-hour SLA
+                                requirements.</li>
+                            <li>Reduced infrastructure costs by 20% through optimized deployments and resource
+                                management.</li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <div class="project-title">OCR & Prepop Automation</div>
                         <ul class="project-details">
-                            <li>Cut manual data entry time by 80% for KYC, ITR, and invoice processing using GenAI-enhanced OCR.</li>
-                            <li>Improved extraction accuracy by 35%, significantly reducing error rates and processing time.</li>
+                            <li>Cut manual data entry time by 80% for KYC, ITR, and invoice processing using
+                                GenAI-enhanced OCR.</li>
+                            <li>Improved extraction accuracy by 35%, significantly reducing error rates and processing
+                                time.</li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <div class="project-title">PII Masking (HDFC Ergo & IIFL)</div>
                         <ul class="project-details">
-                            <li>Enabled compliant processing of 1M+ sensitive records daily, ensuring data privacy regulations adherence.</li>
-                            <li>Achieved 2.5x throughput improvement through GPU acceleration and optimized parallelism.</li>
+                            <li>Enabled compliant processing of 1M+ sensitive records daily, ensuring data privacy
+                                regulations adherence.</li>
+                            <li>Achieved 2.5x throughput improvement through GPU acceleration and optimized parallelism.
+                            </li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <div class="project-title">GST/SPP & CSG Systems</div>
                         <ul class="project-details">
-                            <li>Modernized legacy cheque/DD systems, reducing response latency by 45% and improving customer experience.</li>
+                            <li>Modernized legacy cheque/DD systems, reducing response latency by 45% and improving
+                                customer experience.</li>
                             <li>Increased daily transaction throughput by 30% through system optimization.</li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <div class="project-title">Monitoring & Deployments</div>
                         <ul class="project-details">
-                            <li>Reduced incident detection time by 60% through integrated monitoring with Prometheus, Dynatrace, and OpenTelemetry.</li>
-                            <li>Achieved zero-downtime deployments across hybrid GCP infrastructure, improving system reliability.</li>
+                            <li>Reduced incident detection time by 60% through integrated monitoring with Prometheus,
+                                Dynatrace, and OpenTelemetry.</li>
+                            <li>Achieved zero-downtime deployments across hybrid GCP infrastructure, improving system
+                                reliability.</li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <div class="project-title">Omnidocs Integration</div>
                         <ul class="project-details">
-                            <li>Reduced document processing time by 40% with 92% classification accuracy for enterprise document management.</li>
+                            <li>Reduced document processing time by 40% with 92% classification accuracy for enterprise
+                                document management.</li>
                         </ul>
                     </div>
-                    
+
                     <div class="project-item">
                         <div class="project-title">Internal Orchestrator</div>
                         <ul class="project-details">
-                            <li>Reduced integration-related downtime by 35% through secure inter-service communication and robust error handling.</li>
+                            <li>Reduced integration-related downtime by 35% through secure inter-service communication
+                                and robust error handling.</li>
                         </ul>
                     </div>
                 </div>
@@ -460,4 +519,5 @@
         </div>
     </div>
 </body>
+
 </html>
